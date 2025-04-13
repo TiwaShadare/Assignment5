@@ -3,4 +3,4 @@ from django.http import JsonResponse
 
 def index(request):
     return JsonResponse({"message": "Welcome to the Human Resource Management System API"})
-# Create your views here.
+# Create your views here

@@ -74,7 +74,7 @@ def delete_applicant(request, applicant_id: int):
     return {"success": True, "applicant": applicant}    
 
 
-# This is an input schema for the Job model
+# This is an input schema for the Job model.
 class JobIn(Schema):    
     title: str
     location: str

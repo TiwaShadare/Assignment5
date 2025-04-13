@@ -187,7 +187,7 @@ class InterviewModelTests(TestCase):
         self.assertEqual(interview.interview_time, '10:00:00')
         self.assertEqual(interview.interview_status, 'Scheduled')
 
-#Testing Interview update.
+#Testing Interview update
 class InterviewUpdateTests(TestCase):
     def setUp(self):
         self.interview = Interview.objects.create(

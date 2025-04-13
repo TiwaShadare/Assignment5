@@ -40,7 +40,7 @@ class ApplicantOut(Schema):
 
 @api.post("/applicants")
 def create_applicant(request, payload: ApplicantIn):
-    applicant = Applicant(**payload.dict()) # Create a new Applicant instance   
+    applicant = Applicant(**payload.dict()) # Create a new Applicant instance.  
     applicant.save()
     return {"success": True, "applicant": applicant}    
 
